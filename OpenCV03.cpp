@@ -1,4 +1,5 @@
 // Rect, Size, Point 클래스 예제
+// RotatedRect 꼭지점 좌표, bounding Rect
 
 #include <opencv2/opencv.hpp>
 #include <iostream>
@@ -23,6 +24,17 @@ int main(void) {
 	cout << "rc4 = " << rc4 << endl;
 	cout << "rc5 = " << rc5 << endl;
 	cout << "rc6 = " << rc6 << endl;
+	
+	RotatedRect rr1(Point2f(40, 30), Size2f(40, 20), 30.f);
+	Point2f pts[4];
+	rr1.points(pts);
+
+	cout << "pts = ";
+	for(int i=0;i<4;i++) {
+		cout << pts[i] << " ";
+	} cout << endl;
+	Rect br = rr1.boundingRect2f();
+	cout << "br = " << br << endl;
 
 	return 0;
 }
