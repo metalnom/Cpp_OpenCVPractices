@@ -1,7 +1,6 @@
 // 이미지 읽어오기
 // 윈도우 이동
-// 
-
+// 윈도우 소멸 
 
 #include <opencv2/opencv.hpp>
 #include <iostream>
