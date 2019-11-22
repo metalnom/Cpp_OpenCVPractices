@@ -1,4 +1,5 @@
-// Mat 
+// Mat 클래스
+// 원소 값 참조
 
 #include <opencv2/opencv.hpp>
 #include <iostream>
