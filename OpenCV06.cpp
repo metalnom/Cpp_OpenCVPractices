@@ -10,7 +10,8 @@ using namespace cv;
 int main(void) {
 
 	Mat img1 = imread("lenna.tif", IMREAD_COLOR);
-		// Eclipse에서는 경
+		// Eclipse에서는 경로 지정다해줘야
+	
 	if(img1.empty()) {
 		cerr << "Image load failed!" << endl;
 		return -1;
